@@ -1,0 +1,16 @@
+######################volume of culinder using lamda fns #################################
+
+volume = lambda radius : 3.142 * radius * radius * height
+radius=5
+height=3
+print(volume(radius))
+
+35.64999999999998
+ish@ishan-desktop-machine:~$ cat b4.py 
+volume = lambda radius : 3.142 * radius * radius * height
+radius=5
+height=3
+print(volume(radius))
+ish@ishan-desktop-machine:~$ python3 b4.py 
+235.64999999999998
+ish@ishan-desktop-machine:~$ 

@@ -1,0 +1,51 @@
+
+a))))below are some expiremnets on Modules 
+
+
+vi project.py
+
+"""
+project.py
+"""
+import resuable
+print("this is running code from project")
+print(resuable.my_square(5))
+
+
+
+another script called as resuable is created and this script is being called by project.py 
+
+vi resuable.py
+
+"""
+resuable.py
+"""
+def my_square(a: int)->int:
+  print("running the code")
+  return a*a
+
+
+#####please find the below output ->>>>>>>
+
+
+
+sh@ishan-desktop-machine:~$ cat resuable.py 
+"""
+resuable.py
+"""
+def my_square(a: int)->int:
+  print("running the code")
+  return a*a
+ish@ishan-desktop-machine:~$ cat project.py 
+"""
+project.py
+"""
+import resuable
+print("this is running code from project")
+print(resuable.my_square(5))
+ish@ishan-desktop-machine:~$ python3 project.py 
+this is running code from project
+running the code
+25
+ish@ishan-desktop-machine:~$ 
+

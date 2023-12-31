@@ -1,0 +1,58 @@
+
+######################i will now perfome exercise on map and lambda####
+
+
+
+def double_number(n: int)->int:
+
+ return n+n
+ 
+my_number=[1,2,3,4,5]
+
+result=map(double_number,my_number)
+
+print(list(result))
+
+for i in map(double_number,my_number):
+ print(i)
+
+
+
+
+
+
+sh@ishan-desktop-machine:~$ cat map1.py 
+def double_number(n: int)->int:
+
+ return n+n
+ 
+my_number=[1,2,3,4,5]
+
+result=map(double_number,my_number)
+
+print(list(result))
+
+for i in map(double_number,my_number):
+ print(i)
+
+ish@ishan-desktop-machine:~$ python3 map1.py 
+[2, 4, 6, 8, 10]
+2
+4
+6
+8
+10
+ish@ishan-desktop-machine:~$ 
+
+
+
+#######################printing of cirumference by using lamda############################
+
+ish@ishan-desktop-machine:~$ cat lam.py 
+circumference = lambda radius : 2 * 3.142 * radius
+area = lambda radius : 3.142 * radius * radius
+radius = 5
+print(circumference(radius), area(radius))
+ish@ishan-desktop-machine:~$ python3 lam.py 
+31.419999999999998 78.55
+ish@ishan-desktop-machine:~$ 

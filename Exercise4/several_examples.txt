@@ -1,0 +1,93 @@
+i made a new file called as o.py in that file i added the below code to find the most priced items 
+
+sh@ishan-desktop-machine:~$ cat o.py 
+def most_expensive(price_list):
+    
+  
+    max_price = 0
+    max_price_item = ""
+    
+    for description, price in price_list:
+       
+        if price > max_price:
+            max_price = price
+            max_price_item = description
+        
+        else:
+            pass
+    
+    return max_price_item, max_price
+
+
+price_list = [("cherry", 1.0), ("Apples", .5), ("Pears", .7), ("Peaches", .8)]
+
+product, price  = most_expensive(price_list)
+print(product, price)
+
+below is the output 
+
+
+ish@ishan-desktop-machine:~$ python3 o.py 
+cherry 1.0
+ish@ishan-desktop-machine:~$ 
+
+
+2nddly i added the availaibility variable also it gave me the below output and name of file is p.py
+
+
+
+def most_expensive(price_list):
+    
+  
+    max_price = 0
+    max_price_item = ""
+    
+    for description, price in price_list:
+       
+        if price > max_price:
+            max_price = price
+            max_price_item = description
+        
+        else:
+            pass
+    
+    return max_price_item, max_price
+
+
+price_list = [("cherry", 1.0), ("Apples", .5), ("Pears", .7), ("Peaches", .8)]
+
+product, price,availability = most_expensive(price_list)
+print(product, price,availability)
+
+I got the error since availability variable is not defined in price_list 
+
+ish@ishan-desktop-machine:~$ cat p.py 
+def most_expensive(price_list):
+    
+  
+    max_price = 0
+    max_price_item = ""
+    
+    for description, price in price_list:
+       
+        if price > max_price:
+            max_price = price
+            max_price_item = description
+        
+        else:
+            pass
+    
+    return max_price_item, max_price
+
+
+price_list = [("cherry", 1.0), ("Apples", .5), ("Pears", .7), ("Peaches", .8)]
+
+product, price,availability = most_expensive(price_list)
+print(product, price,availability)
+
+ish@ishan-desktop-machine:~$ python3 p.py 
+Traceback (most recent call last):
+  File "/home/ish/p.py", line 21, in <module>
+    product, price,availability = most_expensive(price_list)
+ValueError: not enough values to unpack (expected 3, got 2)
+ish@ishan-desktop-machine:~$ 

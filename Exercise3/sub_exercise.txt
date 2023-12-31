@@ -1,0 +1,15 @@
+###################################below is the code and example show how to convert kelvin to farahnite and celsius #############################
+
+sh@ish-ubuntudesktop:~$ cat ui.py 
+conversion=273.15
+valus_in_degree_kelvin=[0,5,10,15,20,30,40,50,60,70]
+valus_in_degree_celsius=[(i-conversion) for i in valus_in_degree_kelvin ]
+valu_in_degree_far=[((i-conversion)* 9/5 + 32) for i in valus_in_degree_kelvin ]
+print(valus_in_degree_celsius)
+print(valu_in_degree_far)
+ish@ish-ubuntudesktop:~$ 
+
+ish@ish-ubuntudesktop:~$ python3 ui.py 
+[-273.15, -268.15, -263.15, -258.15, -253.14999999999998, -243.14999999999998, -233.14999999999998, -223.14999999999998, -213.14999999999998, -203.14999999999998]
+[-459.66999999999996, -450.66999999999996, -441.66999999999996, -432.66999999999996, -423.66999999999996, -405.66999999999996, -387.66999999999996, -369.66999999999996, -351.66999999999996, -333.66999999999996]
+ish@ish-ubuntudesktop:~$ 

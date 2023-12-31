@@ -1,0 +1,57 @@
+###############print of string interpolation ##############################
+
+1)))))))))))
+
+
+sh@ish-ubuntudesktop:~$ python3 string1.py 
+good morning ishan would u like a break
+ish@ish-ubuntudesktop:~$ cat string1.py 
+a="would u like a break"
+print("good morning ishan " + a )
+ish@ish-ubuntudesktop:~$ 
+
+vi string2.py
+a=2
+b=3
+print("good morning ishan sir we have {} for breakfast do u love?" .format("fruits"))
+print("sir we have total {} apples,{}mangoes and {} chickoos" .format(a,b,a+b))
+
+
+2))))))))))))
+
+ish@ish-ubuntudesktop:~$ cat string2.py 
+a=2
+b=3
+print("good morning ishan sir we have {} for breakfast do u love?" .format("fruits"))
+print("sir we have total {} apples,{}mangoes and {} chickoos" .format(a,b,a+b))
+ish@ish-ubuntudesktop:~$ python3 string2.py 
+good morning ishan sir we have fruits for breakfast do u love?
+sir we have total 2 apples,3mangoes and 5 chickoos
+ish@ish-ubuntudesktop:~$ 
+
+
+3)))))))))))))
+
+sh@ish-ubuntudesktop:~$ cat string3.py 
+a="good"
+b="morning"
+c="ishan"
+print("the message for today is{} {} {} ".format(a,b,c))
+ish@ish-ubuntudesktop:~$ 
+ish@ish-ubuntudesktop:~$ python3 string3.py 
+the message for today isgood morning ishan 
+ish@ish-ubuntudesktop:~$ 
+
+4))))))))))))))))))
+
+vi string5.py
+a=44444
+b=44
+c=a/b
+print(f"the result of {a} when divided by {b} is {c}")
+print(f"after rounding to four decimal it is{c:1.4f}")
+
+ish@ish-ubuntudesktop:~$ python3 string5.py 
+the result of 44444 when divided by 44 is 1010.0909090909091
+after rounding to four decimal it is1010.0909
+ish@ish-ubuntudesktop:~$ 

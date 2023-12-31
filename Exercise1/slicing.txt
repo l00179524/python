@@ -1,0 +1,86 @@
+#############slicing examples#########################
+1))))
+vi slicing.py
+a="greetings"
+print(a[0:4:1])
+
+ish@ish-ubuntudesktop:~$ python3 slicing.py 
+gree
+ish@ish-ubuntudesktop:~$ cat slicing.py 
+a="greetings"
+print(a[0:4:1])
+ish@ish-ubuntudesktop:~$ 
+
+
+2))))
+
+ish@ish-ubuntudesktop:~$ vi slicing2.py
+ish@ish-ubuntudesktop:~$ python3 slicing2.py 
+sgn
+ish@ish-ubuntudesktop:~$ cat slicing2.py 
+a="greetings"
+print(a[-1:-4:-1])
+ish@ish-ubuntudesktop:~$ 
+
+3)))))))))))
+
+
+vi slicing3.py
+a="Greetings"
+print([5])
+
+
+4)))))))
+
+ish@ish-ubuntudesktop:~$ vi slicing4.py
+ish@ish-ubuntudesktop:~$ python3 slicing4.py 
+141
+10
+ish@ish-ubuntudesktop:~$ cat s
+slicing2.py  slicing3.py  slicing4.py  slicing.py   snap/        
+ish@ish-ubuntudesktop:~$ cat slicing4
+cat: slicing4: No such file or directory
+ish@ish-ubuntudesktop:~$ cat slicing4.py 
+a="14"
+b="1"
+c=a+b
+print(c)
+d=3
+e=7
+c=d+e
+print(c)
+ish@ish-ubuntudesktop:~$ 
+
+vi slicing5.py
+a="ishan"
+b=(a[0:3:1])
+c="u"
+d=(a[-1])
+f=b+c+d
+print(f)
+
+5)))))))))))))))
+ish@ish-ubuntudesktop:~$ python3 slicing5.py 
+ishun
+ish@ish-ubuntudesktop:~$ cat slicing5.py 
+a="ishan"
+b=(a[0:3:1])
+c="u"
+d=(a[-1])
+f=b+c+d
+print(f)
+
+ish@ish-ubuntudesktop:
+
+
+a="14"
+b="5"
+c=a+b
+print(c)
+d=14
+f=3
+c=d+f
+print(c)
+
+
+

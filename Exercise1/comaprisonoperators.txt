@@ -1,0 +1,19 @@
+
+######example of comparison operators###########################
+
+>> 2==2
+True
+>>> 2>=3
+False
+>>> 3>=2
+True
+>>> 2!=2
+False
+>>> 2=2
+  File "<stdin>", line 1
+    2=2
+    ^
+SyntaxError: cannot assign to literal here. Maybe you meant '==' instead of '='?
+>>> 2==2
+True
+>>> 

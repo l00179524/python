@@ -1,0 +1,39 @@
+#####################some example on tuples are as below ###############################
+
+ish@ish-ubuntudesktop:~$ cat tuple1.py 
+a=["amazon","flipkart","myntra"]
+b=(1,2,3,"jabong","xlsx")
+print(type(a))
+print(type(b))
+
+ish@ish-ubuntudesktop:~$ python3 tuple1.py 
+<class 'list'>
+<class 'tuple'>
+ish@ish-ubuntudesktop:~$ 
+
+
+ish@ish-ubuntudesktop:~$ cat tuple2.py 
+a=["amazon","flipkart","amazon"]
+b=(1,2,3,"jabong","xlsx",3)
+print(a)
+print(b)
+print(type(a))
+print(type(b))
+####this is to see how many times amazon appears in tuple for a##############
+print(a.count("amazon"))
+####this is to see how many times 3 appears in tuple for b##############
+print(b.count(3))
+##########location for amazon in tuple a################
+print(a.index("amazon"))
+##########location for 3 in tuple b################
+print(b.index(3))
+ish@ish-ubuntudesktop:~$ python3 tuple2.py 
+['amazon', 'flipkart', 'amazon']
+(1, 2, 3, 'jabong', 'xlsx', 3)
+<class 'list'>
+<class 'tuple'>
+2
+2
+0
+2
+ish@ish-ubuntudesktop:~$ 

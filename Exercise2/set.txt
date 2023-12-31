@@ -1,0 +1,16 @@
+#####################################examples on set ####################################################################
+
+sh@ish-ubuntudesktop:~$ cat set.py 
+a=set()
+print(type(a))
+print(a)
+a.add(1)
+a.add(2)
+a.add(3)
+a.add(1)
+print(a)
+ish@ish-ubuntudesktop:~$ python3 set.py 
+<class 'set'>
+set()
+{1, 2, 3}
+ish@ish-ubuntudesktop:~$ 

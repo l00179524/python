@@ -1,0 +1,8 @@
+#######################None Keyword############################
+
+>>> a=None
+>>> print(a)
+None
+>>> print(type(a))
+<class 'NoneType'>
+>>>

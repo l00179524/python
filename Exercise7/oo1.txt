@@ -1,0 +1,30 @@
+###############################Below is the code for object oriented ############################################
+ish@ish-virtual-machine~$ cat oo1.py 
+"""
+Simple Class by is, by convention, use camel case to name classes
+"""
+
+
+class ishzClass():
+    
+    # Constructor
+    def __init__(self, my_greeting):
+        print("Running constructor for ishzClass")
+        
+        self.message = my_greeting
+
+    def my_method(self):
+        print(self.message)
+
+my_class1 = ishzClass("Morning ish!")
+my_class1.my_method()
+print(type(my_class1))
+
+
+
+###################After executing the oo1.py file i got the below output############################################################
+ish@ish-virtual-machine:~$ python3 oo1.py 
+Running constructor for ishzClass
+Morning ish!
+<class '__main__.ishzClass'>
+ish@ish-virtual-machine:~$ 

@@ -1,0 +1,65 @@
+###################module or import ##########################
+
+
+print(f"this module is callled my {__name__}")
+ish@ishan-desktop-machine:~/Exercises_06/mylib$ vi cube.py 
+ish@ishan-desktop-machine:~/Exercises_06/mylib$ python3 cube.py 
+This module is called __main__ and executes as a standalone script
+ish@ishan-desktop-machine:~/Exercises_06/mylib$ cd ..
+ish@ishan-desktop-machine:~/Exercises_06$ python3 project2.py 
+This module is called mylib.cube and is being called by another script
+4
+Yo, time to cube stuff! 27
+Yo, time to square stuff! 9
+ish@ishan-desktop-machine:~/Exercises_06$ cd mylib/
+ish@ishan-desktop-machine:~/Exercises_06/mylib$ cat cube.py 
+cube_text = "Yo, time to cube stuff!"
+
+def cube(x):
+    return x*x*x
+
+# Uncomment to test
+#print(cube(2))
+if (__name__ == '__main__'):
+    print(f"This module is called {__name__} and executes as a standalone script")
+else:
+    print(f"This module is called {__name__} and is being called by another script")
+ish@ishan-desktop-machine:~/Exercises_06/mylib$ cat cube.py 
+cube_text = "Yo, time to cube stuff!"
+
+def cube(x):
+    return x*x*x
+
+# Uncomment to test
+#print(cube(2))
+if (__name__ == '__main__'):
+    print(f"This module is called {__name__} and executes as a standalone script")
+else:
+    print(f"This module is called {__name__} and is being called by another script")
+ish@ishan-desktop-machine:~/Exercises_06/mylib$ python3 cube.py 
+This module is called __main__ and executes as a standalone script
+ish@ishan-desktop-machine:~/Exercises_06/mylib$ cat cube.py 
+cube_text = "Yo, time to cube stuff!"
+
+def cube(x):
+    return x*x*x
+
+# Uncomment to test
+#print(cube(2))
+if (__name__ == '__main__'):
+    print(f"This module is called {__name__} and executes as a standalone script")
+else:
+    print(f"This module is called {__name__} and is being called by another script")
+ish@ishan-desktop-machine:~/Exercises_06/mylib$ cd ..
+ish@ishan-desktop-machine:~/Exercises_06$ python3 project2.py 
+This module is called mylib.cube and is being called by another script
+4
+Yo, time to cube stuff! 27
+Yo, time to square stuff! 9
+ish@ishan-desktop-machine:~/Exercises_06$ cat project2.py 
+import mylib.cube as mycube
+import mylib.square as mysquare
+
+print(mycube.cube_text, mycube.cube(3))
+print(mysquare.square_text, mysquare.square(3))
+ish@ishan-desktop-machine:~/Exercises_06$ 

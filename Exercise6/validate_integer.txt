@@ -1,0 +1,36 @@
+##################################################Below code is useful in validating the integer###############################################
+sh@ish-virtual-machine:~$ cat validate_integer.py 
+
+from re import A
+
+def validate_integer():
+    # Using while loop
+    while True:
+        try:
+            user_input = int(input("Enter an integer value: "))
+        except:
+            # Bad value, 
+            print("Error")
+            continue
+        else:
+            print("Thank u so much")
+            # Good value, exit the loop
+            break
+        finally:
+            # Continue
+            print("This message is shown every now and then")
+    
+
+validate_integer()
+
+
+
+######################I got the below output after running the file ###############################
+
+ish@ish-virtual-machine:~$ python3 validate_integer.py 
+Enter an integer value: 10
+Thank u so much
+This message is shown every now and then
+
+
+

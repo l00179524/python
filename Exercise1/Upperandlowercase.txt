@@ -1,0 +1,43 @@
+#####################below are the examples of upper case lower case with and without spaces and brackets ###############################
+
+
+>>> a="my name is ishan"
+>>> b=a.upper()
+>>> c=a.lower()
+>>> print(f"orignal string is{a}")
+orignal string ismy name is ishan
+>>> print(f"the upper case is{b}")
+the upper case isMY NAME IS ISHAN
+>>> print(f"the lower case is{c}")
+the lower case ismy name is ishan
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> test_with_spaces="   ishan samant   "
+>>> test_without_spaces=test_with_spaces.strip()
+>>> print(test_without_spaces)
+ishan samant
+>>> test_with_brackets= "(ishan samant)"
+>>> test_without_brackets=test_with_brackets.strip('(')
+>>> test_without_brackets=test_with_brackets.strip(')')
+>>> print(test_with_brackets)
+(ishan samant)
+>>> print(test_without_brackets)
+(ishan samant
+>>> test_with_brackets= "(ishan samant)"
+>>> test_without_brackets=test_with_brackets.strip('(')
+>>> test_without_brackets=test_with_brackets.strip(')')
+>>> print(test_without_brackets)
+ 	(ishan samant
+>>> test_with_brackets= "(ishan samant)"
+>>> test_without_brackets=test_with_brackets.strip('(')
+>>> test_without_brackets=test_without_brackets.strip(')')
+>>> print(test_without_brackets)
+ishan samant
+>>> 
+

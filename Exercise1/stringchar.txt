@@ -1,0 +1,8 @@
+###################string character #############################
+>>> b='ishan'
+>>> print(type(b))
+<class 'str'>
+>>> 
+>>> print(b)
+ishan
+>>> 

@@ -1,0 +1,31 @@
+#######################I add the below code for formatting ###################################
+
+
+
+###############In Upper case###################################################
+def convert_upper(abc):
+    return my_text.upper()
+
+#########################In lower case ################################################
+def convert_lower(abc):
+    return my_text.lower()
+
+########################To capital#######################################################################
+def convert_capital(abc):
+    return my_text.capitalize()
+		
+		
+print(convert_lower("Ishan Samant"))
+print(convert_upper("Ishan Samant"))
+print(convert_capital("mUMBAI"))
+
+
+
+
+
+############################I get the below output###########################################
+
+sh@ish-virtual-machine:~$ python3 formatter.py 
+ishan samant
+ISHAN SAMANT
+Mumbai

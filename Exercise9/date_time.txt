@@ -1,0 +1,20 @@
+
+#############################################Below is the code to print date and time############################################################
+
+ish@ish-virtual-machine:~$ cat date_time.py 
+from datetime import datetime as d_tyy
+# Definning variable to print date 
+a = d_tyy.now()
+print(a)
+
+unix_time = dt.timestamp(today)
+print(unix_time)
+
+ish@ish-virtual-machine:~$ 
+
+
+########################################Below is the output #############################################
+
+ish@ish-virtual-machine:~$ python3 date_time.py 
+2023-12-19 18:10:11.998203
+1703009411.998203

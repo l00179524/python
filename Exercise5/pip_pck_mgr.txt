@@ -1,0 +1,15 @@
+###################################Several command for pip package manager ###############################
+
+  315  pip3 -h
+  316  pip install --upgrade pip
+  317  sudo apt install python3-pip
+  318  vi public.py
+  319  cat public.py 
+  320  pip install numpy 
+  321  pip list
+  322  pip show package_name 
+  323  pip uninstall numpy 
+  324  pip list
+  325  pip show mylib/
+  326  history 
+ish@ishan-desktop-machine:~/Exercises_06$ 

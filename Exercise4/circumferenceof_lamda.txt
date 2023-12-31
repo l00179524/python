@@ -1,0 +1,11 @@
+
+#######################printing of cirumference by using lamda############################
+
+ish@ishan-desktop-machine:~$ cat lam.py 
+circumference = lambda radius : 2 * 3.142 * radius
+area = lambda radius : 3.142 * radius * radius
+radius = 5
+print(circumference(radius), area(radius))
+ish@ishan-desktop-machine:~$ python3 lam.py 
+31.419999999999998 78.55
+ish@ishan-desktop-machine:~$ 

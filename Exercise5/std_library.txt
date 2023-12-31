@@ -1,0 +1,53 @@
+
+################examples on standard library#################################
+
+vi library1.py
+
+import math
+print("enter any of the input u want:")
+a=float(input("a:"))
+b=float(input("b:"))
+c=math.sqrt(a**2+b**2)
+print("the final output is :{hypo:1.4f}".format(hypo=c))
+
+below is the output >>>>>>>
+
+ish@ishan-desktop-machine:~$ cat library1.py 
+import math
+print("enter any of the input u want:")
+a=float(input("a:"))
+b=float(input("b:"))
+c=math.sqrt(a**2+b**2)
+print("the final output is :{hypo:1.4f}".format(hypo=c))
+ish@ishan-desktop-machine:~$ python3 library1.py 
+enter any of the input u want:
+a:3
+b:4
+the final output is :5.0000
+ish@ishan-desktop-machine:~$ 
+
+
+vi libraray2.py 
+
+rom math import sqrt
+print("Input lengths of the two short triangle sides:")
+a = float(input("a: "))
+b = float(input("b: "))
+c = sqrt(a**2 + b**2)
+print("The length of the hypotenuse to four places is: {hypo:1.4f}".format(hypo=c))
+
+below is output >>>>>>>>>>>>>>>>>
+
+sh@ishan-desktop-machine:~$ cat libraray2.py 
+from math import sqrt
+print("Input lengths of the two short triangle sides:")
+a = float(input("a: "))
+b = float(input("b: "))
+c = sqrt(a**2 + b**2)
+print("The length of the hypotenuse to four places is: {hypo:1.4f}".format(hypo=c))
+ish@ishan-desktop-machine:~$ python3 libraray2.py 
+Input lengths of the two short triangle sides:
+a: 4
+b: 3
+The length of the hypotenuse to four places is: 5.0000
+ish@ishan-desktop-machine:~$ 

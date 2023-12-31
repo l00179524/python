@@ -1,0 +1,43 @@
+###############Packagea #####################
+
+below is the package program prfomed along with the output by me >>>>>>>>>>>>>
+
+
+
+ish@ishan-desktop-machine:~$ cd Exercises_06/
+ish@ishan-desktop-machine:~/Exercises_06$ ls -l
+total 12
+drwxrwxr-x 3 ish ish 4096 Oct 26 21:16 mylib
+-rw-rw-r-- 1 ish ish   36 Oct 26 21:11 project1.py
+-rw-rw-r-- 1 ish ish  149 Oct 26 21:15 project2.py
+ish@ishan-desktop-machine:~/Exercises_06$ cat project1.py 
+import mylib
+print(mylib.copyright)
+ish@ishan-desktop-machine:~/Exercises_06$ ca project2.py 
+ca: command not found
+ish@ishan-desktop-machine:~/Exercises_06$ cat project2.py 
+import mylib.cube as mycube
+import mylib.square as mysquare
+
+print(mycube.cube_text, mycube.cube(3))
+print(mysquare.square_text, mysquare.square(3))
+ish@ishan-desktop-machine:~/Exercises_06$ cd mylib/
+ish@ishan-desktop-machine:~/Exercises_06/mylib$ ls -l
+total 16
+-rw-rw-r-- 1 ish ish  105 Oct 26 21:13 cube.py
+-rw-rw-r-- 1 ish ish   26 Oct 26 21:10 _init.py_
+drwxrwxr-x 2 ish ish 4096 Oct 26 21:16 __pycache__
+-rw-rw-r-- 1 ish ish  111 Oct 26 21:12 square.py
+ish@ishan-desktop-machine:~/Exercises_06/mylib$ cat cube.py 
+cube_text = "Yo, time to cube stuff!"
+
+def cube(x):
+    return x*x*x
+
+# Uncomment to test
+print(cube(2))
+ish@ishan-desktop-machine:~/Exercises_06/mylib$ cat square.py 
+square_text = "Yo, time to square stuff!"
+
+def square(x):
+    return x*x

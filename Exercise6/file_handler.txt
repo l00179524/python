@@ -1,0 +1,31 @@
+############################################################The below code is use for file handler#####################################################################
+ish@ish-virtual-machine:~$ cat file_handler.py 
+my_filename = "logfile_19dec23.txt"
+
+try:
+    with open(my_filename, "a") as file_handle:
+        print(f"Writing a test line to {my_filename}")
+        file_handle.write("Test line")
+except IOError as err:
+    print(f"IOError was {err}")
+except EOFError as err:
+    print(f"End of file error was {err}")
+except OSError:
+    print("OS Error")
+except:
+    print("General Error")
+else:
+    print("creation of file is done")
+finally:
+    print("we are abot to finish")
+    
+    
+
+
+
+##############################I got the below output #############################################
+
+sh@ish-virtual-machine:~$ python3 file_handler.py 
+Writing a test line to logfile_19dec23.txt
+creation of file is done
+we are abot to finish

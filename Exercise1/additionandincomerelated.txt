@@ -1,0 +1,36 @@
+#############################Addition and income related exercise################################################################
+
+
+I used linux in my pracs laboratory by creting a vi file and then editing the file to get the output 
+
+ish@ish-ubuntudesktop:~$ vi add.py
+ish@ish-ubuntudesktop:~$ python3 add.py 
+3
+ish@ish-ubuntudesktop:~$ cat add.py 
+a=2
+b=1
+c=a+b
+print(c)
+
+ish@ish-ubuntudesktop:~$ 
+
+
+
+
+
+I again created a new vi file and added the below code with simple examples i got the output in income.py
+
+
+ish@ish-ubuntudesktop:~$ cat income.py 
+income=100
+singlepersontax=50
+taxableattwentyper=income-singlepersontax
+taxableatfourteyper=income-taxableattwentyper
+percenttaxat20=taxableattwentyper * .2
+percenttaxat40=taxableatfourteyper * .4
+total=percenttaxat20+percenttaxat40
+print(total)
+
+
+ish@ish-ubuntudesktop:~$ python3 income.py 
+30.0

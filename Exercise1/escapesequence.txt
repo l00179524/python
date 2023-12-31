@@ -1,0 +1,39 @@
+#######################escape sequence prascs###############################
+
+1))))) 
+
+sh@ish-ubuntudesktop:~$ vi esc1.py
+ish@ish-ubuntudesktop:~$ python3 esc1.py 
+ggod morning jor 
+ would u like a break
+ish@ish-ubuntudesktop:~$ cat esc1.py 
+print("ggod morning jor \n would u like a break")
+ish@ish-ubuntudesktop:~$ 
+
+
+2)))))))
+
+vi esc2.py
+print("good morning ish ", end=" ")
+print("would u like a break")
+sh@ish-ubuntudesktop:~$ python3 esc2.py 
+good morning ish  would u like a break
+ish@ish-ubuntudesktop:~$ cat esc2.py 
+print("good morning ish ", end=" ")
+print("would u like a break")
+ish@ish-ubuntudesktop:~$ 
+
+
+
+test_with_spaces="   ishan samant   "
+test_without_spaces=test_with_spaces.strip()
+print(test_without_spaces)
+
+
+test_with_brackets= "(ishan samant)"
+test_without_brackets=test_with_brackets.strip('(')
+test_without_brackets=test_with_brackets.strip(')')
+print(test_without_brackets)
+
+
+

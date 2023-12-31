@@ -1,0 +1,87 @@
+###############some examples on dictionary#######################################################
+ish@ish-ubuntudesktop:~$ cat my_dict1.py 
+my_dict1={"name":"ishan","surname":"samant","occupation":"engineer"}
+print(my_dict1)
+print("good morning ishan" + my_dict1["occupation"])
+ish@ish-ubuntudesktop:~$ python3 my_dict1.py 
+{'name': 'ishan', 'surname': 'samant', 'occupation': 'engineer'}
+good morning ishanengineer
+ish@ish-ubuntudesktop:~$ 
+
+
+
+ish@ish-ubuntudesktop:~$ cat my_dict2.py 
+my_dict1={"name":"ishan","surname":"samant","occupation":"engineer"}
+print(my_dict1)
+my_dict1["salary"]="not enough"
+print(my_dict1)
+
+ish@ish-ubuntudesktop:~$ python3 my_dict2.py 
+{'name': 'ishan', 'surname': 'samant', 'occupation': 'engineer'}
+{'name': 'ishan', 'surname': 'samant', 'occupation': 'engineer', 'salary': 'not enough'}
+ish@ish-ubuntudesktop:~$ 
+
+
+##########Printing orignal#########
+ish@ish-ubuntudesktop:~$ cat my_dict3.py 
+my_dict1={"name":"ishan","surname":"samant","occupation":"engineer"}
+print(my_dict1)
+############adding one more field in it###############
+my_dict1["salary"]="not enough"
+print(my_dict1)
+#############replacing one more field################
+my_dict1["occupation"]="surgen"
+print(my_dict1)
+
+ish@ish-ubuntudesktop:~$ python3 my_dict3.py 
+{'name': 'ishan', 'surname': 'samant', 'occupation': 'engineer'}
+{'name': 'ishan', 'surname': 'samant', 'occupation': 'engineer', 'salary': 'not enough'}
+{'name': 'ishan', 'surname': 'samant', 'occupation': 'surgen', 'salary': 'not enough'}
+ish@ish-ubuntudesktop:~$ 
+
+
+
+
+ish@ish-ubuntudesktop:~$ cat my_dict3.py 
+my_dict1={"name":"ishan","surname":"samant","occupation":"engineer"}
+print(my_dict1)
+############adding one more field in it###############
+my_dict1["salary"]="not enough"
+print(my_dict1)
+#############replacing one more field################
+my_dict1["occupation"]="surgen"
+print(my_dict1)
+a=my_dict1.keys()
+print(a)
+b=my_dict1.values()
+print(b)
+c=my_dict1.items()
+print(c)
+
+
+##########i have done this example with dictonary keys,items,values#########
+
+sh@ish-ubuntudesktop:~$ cat ex_dict.py 
+my_dict1={"name":"ishan","surname":"samant","occupation":"engineer"}
+print(my_dict1)
+############adding one more field in it###############
+my_dict1["salary"]="not enough"
+print(my_dict1)
+#############replacing one more field################
+my_dict1["occupation"]="surgen"
+print(my_dict1)
+a=my_dict1.keys()
+print(a)
+b=my_dict1.values()
+print(b)
+c=my_dict1.items()
+print(c)
+ish@ish-ubuntudesktop:~$ python3 ex_dict.py 
+{'name': 'ishan', 'surname': 'samant', 'occupation': 'engineer'}
+{'name': 'ishan', 'surname': 'samant', 'occupation': 'engineer', 'salary': 'not enough'}
+{'name': 'ishan', 'surname': 'samant', 'occupation': 'surgen', 'salary': 'not enough'}
+dict_keys(['name', 'surname', 'occupation', 'salary'])
+dict_values(['ishan', 'samant', 'surgen', 'not enough'])
+dict_items([('name', 'ishan'), ('surname', 'samant'), ('occupation', 'surgen'), ('salary', 'not enough')])
+ish@ish-ubuntudesktop:~$ 
+

@@ -1,0 +1,171 @@
+
+I created my first script called fns1.py   in vi editor
+
+vi fns1.py
+
+def name_of_fns():
+  """
+  this is simple function for test
+  """
+  print("hello world")
+def name_of_fns()
+
+output is------>>>
+
+ish@ishan-desktop-machine:~$ cat fns1.py 
+def name_of_fns():
+  """
+  this is simple function for test
+  """
+  print("hello world")
+name_of_fns()
+ish@ishan-desktop-machine:~$ python3 fns1.py 
+hello world
+ish@ishan-desktop-machine:~$ 
+
+
+
+
+I created second function called as fns2.py in vi editor
+
+and now i will pass variable in it 
+
+vi fns2.py 
+
+def variable_fns(first_name):
+   """
+   this is a simple variable function
+   """
+   print(f"hellow everyone my name is {first_name}")
+   
+variable_fns("ishan")
+
+
+output is >>>>>>>
+
+sh@ishan-desktop-machine:~$ cat fns1.py 
+def name_of_fns():
+  """
+  this is simple function for test
+  """
+  print("hello world")
+name_of_fns()
+ish@ishan-desktop-machine:~$ python3 fns2.py 
+hellow everyone my name is ishan
+ish@ishan-desktop-machine:~$ 
+
+
+
+I created third function called as fns3.py in vi editor for circumfernce calculation 
+
+vi fns3.py
+
+def circumference_of_circle(radius):
+    """
+    Calculate the circumference of a circle based on its radius
+    """
+    return 2 * 3.142 * radius 
+
+a = circumference_of_circle(5)
+print(a)
+
+ish@ishan-desktop-machine:~$ cat fns3.py 
+def circumference_of_circle(radius):
+    """
+    Calculate the circumference of a circle based on its radius
+    """
+    return 2 * 3.142 * radius 
+
+a = circumference_of_circle(5)
+print(a)
+
+ish@ishan-desktop-machine:~$ python3 fns3.py 
+31.419999999999998
+ish@ishan-desktop-machine:~$
+
+
+I created fourth function called as fns4.py in vi editor for circumfernce calculation wherein i avoided the default value 
+
+def circumference_of_circle(radius=5):
+  """
+  this is used to calcultare without default value
+  """
+  return 2 * 3.142 * radius
+
+a=circumference_of_circle()
+print(a)
+sh@ishan-desktop-machine:~$ cat fns4.py 
+def circumference_of_circle(radius=5):
+  """
+  this is used to calcultare without default value
+  """
+  return 2 * 3.142 * radius
+
+a=circumference_of_circle()
+print(a)
+ish@ishan-desktop-machine:~$ python3 fns4.py 
+31.419999999999998
+ish@ishan-desktop-machine:~$ 
+
+
+I created fifth function called as fns5.py in vi editor for circumfernce calculation wherein i used the input value 
+
+def circumference_of_cirecle(radius):
+   """
+   this is used to calculate the circumference with the default value
+   """
+   return 2 * 3.142 * radius
+  
+r=input("provide the input value of radius")
+r_float=float(r)
+a=circumference_of_cirecle(r_float)
+print(a)
+
+ish@ishan-desktop-machine:~$ cat fns5.py 
+def circumference_of_cirecle(radius):
+   """
+   this is used to calculate the circumference with the default value
+   """
+   return 2 * 3.142 * radius
+  
+r=input("provide the input value of radius")
+r_float=float(r)
+a=circumference_of_cirecle(r_float)
+print(a)
+ish@ishan-desktop-machine:~$ python3 fns5.py 
+provide the input value of radius3
+18.852
+ish@ishan-desktop-machine:~$ 
+
+
+
+
+
+i created my 6th script called as fns6.py in vi editor for number calculation 
+
+vi fn6.py 
+ def my_numbers(*numbers):
+  """
+  this us used to print the numbers
+  """
+  final_number=0
+  for num in numbers:
+   final_number=final_number+num
+  return final_number
+  
+print(my_numbers(2,4,8,16,32,64))
+ish@ishan-desktop-machine:~$ cat fn6.py 
+def my_numbers(*numbers):
+  """
+  this us used to print the numbers
+  """
+  final_number=0
+  for num in numbers:
+   final_number=final_number+num
+  return final_number
+  
+print(my_numbers(2,4,8,16,32,64))
+
+ish@ishan-desktop-machine:~$ python3 fn6.py 
+126
+ish@ishan-desktop-machine:~$ 

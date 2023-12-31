@@ -1,0 +1,54 @@
+##############################################################The below code is used to detect the present workinmg directory and the OS which we are using #################
+ish@ish-virtual-machine:~$ cat detect_working_directory.py 
+"""
+directory_utilities.py
+By: ishan
+Date: 19thdec23
+"""
+
+import os, platform
+
+
+current_working_directory = None
+
+def detect_os()->str:
+    # Os detection 
+    return platform.system()
+
+def detect_working_directory()->str:
+    
+    return os.getcwd()
+
+if (__name__ == '__main__'):
+    print(f"This module executes as a standalone script")
+    
+    # Check the OS in use, lower case
+    my_os = detect_os()
+    my_os = my_os.lower()
+    
+    # Parse the response, only check for Windows and Linux
+    if my_os == "windows":
+        print("Your system is Windows")
+    elif my_os == "linux":
+        print("Your system is Linux")
+    else:
+        print(f"Cannot continue, unidentified system = {my_os}")
+        sys.exit()
+
+    
+    current_working_directory = detect_working_directory()
+    print(f"You are coding in: {current_working_directory}")
+
+else:
+    print(f"This module is called {__name__} and is being called by another script")
+
+
+
+
+=###################################below is the output of code i get ############################################
+
+sh@ish-virtual-machine:~$ python3 detect_working_directory.py 
+This module executes as a standalone script
+Your system is Linux
+You are coding in: /home/ish
+ish@ish-virtual-machine:~$ 

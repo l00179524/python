@@ -1,0 +1,58 @@
+ish@ish-ubuntudesktop:~$ cat con1.py 
+a=True
+b=True
+c=True
+
+if a:
+  print("a was True")
+elif b:
+  print("b was True")
+elif c:
+  print("c was True")
+else:
+  print("no other was true")
+ish@ish-ubuntudesktop:~$ python3 con1.py 
+a was True
+ish@ish-ubuntudesktop:~$ 
+
+
+
+ithen changed the value of a , b,c to false  and got the below output 
+
+ish@ish-ubuntudesktop:~$ cat con1.py 
+a=False
+b=False
+c=False
+
+
+if a:
+  print("a was True")
+elif b:
+  print("b was True")
+elif c:
+  print("c was True")
+else:
+  print("no other was true")
+ish@ish-ubuntudesktop:~$ python3 con1.py 
+no other was true
+ish@ish-ubuntudesktop:~$ 
+
+
+
+Now in the below if else script i am going to use shebang operator 
+
+
+I used the command which python3 it gave me the patch from where python origanted 
+
+ish@ish-ubuntudesktop:~$ which python3
+/usr/bin/python3
+ish@ish-ubuntudesktop:~$ 
+ish@ish-ubuntudesktop:~$ cat con3.py 
+#!/usr/bin/python3
+if (3>5) and (9>4):
+    print ("yess all is ok")
+else:
+    print("all is not ok")
+ish@ish-ubuntudesktop:~$ ./con3.py -------------------------------->> i executed the script only using ./ as i gave x permission to script 
+all is not ok
+ish@ish-ubuntudesktop:~$ 

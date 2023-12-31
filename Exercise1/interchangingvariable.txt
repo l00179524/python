@@ -1,0 +1,14 @@
+###################interchanging of variable between string and integer#########################
+
+>> cat=2
+>>> print(cat)
+2
+>>> print(type(cat))
+<class 'int'>
+>>> 
+>>> cat='mud'
+>>> print(cat)
+mud
+>>> print(type(cat))
+<class 'str'>
+>>> 

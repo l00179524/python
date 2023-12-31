@@ -1,0 +1,18 @@
+###################mathematical precedence calculations################################
+
+>>> 10*2+3*5
+35
+>>> 10*(2+3)*5
+250
+>>> 
+>>> 
+>>> 
+>>> 
+
+
+###############number +string cannot be added we get an error#############################
+>>> a = "ish" + 3
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>> 

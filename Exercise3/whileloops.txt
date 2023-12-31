@@ -1,0 +1,30 @@
+##############################################while loops ############################################################################
+
+
+he number is not having the values 10
+ish@ish-ubuntudesktop:~$ cat myfile_while.py 
+x=0
+while x<10:
+  print(f"the number X is having the value {x}")
+  x=x+1
+else:
+  print(f"the number is not having the values {x}")
+ish@ish-ubuntudesktop:~$ python3 myfile_while.py 
+the number X is having the value 0
+the number X is having the value 1
+the number X is having the value 2
+the number X is having the value 3
+the number X is having the value 4
+the number X is having the value 5
+the number X is having the value 6
+the number X is having the value 7
+the number X is having the value 8
+the number X is having the value 9
+the number is not having the values 10
+ish@ish-ubuntudesktop:~$ 
+
+
+
+
+
+
